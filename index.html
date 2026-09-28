@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tik Tok Drops</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#000;color:white;font-family:Arial}
+.feed{height:100vh;overflow-y:auto;scroll-snap-type:y mandatory}
+.video{height:100vh;scroll-snap-align:start;position:relative;
+display:flex;align-items:center;justify-content:center;
+background:linear-gradient(135deg,#111,#333)}
+.title{position:absolute;top:18px;width:100%;text-align:center;font-size:22px;font-weight:bold}
+.big{font-size:35px;font-weight:bold;text-align:center}
+.info{position:absolute;bottom:65px;left:18px}
+.buttons{position:absolute;right:15px;bottom:65px;font-size:28px;line-height:2}
+.premium{background:#111d;padding:25px;border-radius:20px;text-align:center}
+.gold{color:#ffd43b}
+button{padding:12px 20px;border:0;border-radius:25px;font-weight:bold}
+</style>
+</head>
+
+<body>
+<div class="feed">
+
+<section class="video">
+<div class="title">Tik Tok Drops</div>
+<div class="big">🎬<br>FREE VIDEO</div>
+<div class="info"><b>@creator1</b><br>Welcome to Tik Tok Drops!</div>
+<div class="buttons">❤️<br>💬<br>↗️</div>
+</section>
+
+<section class="video">
+<div class="big">😂<br>FUNNY VIDEO</div>
+<div class="info"><b>@funnyclips</b><br>Another free drop!</div>
+<div class="buttons">❤️<br>💬<br>↗️</div>
+</section>
+
+<section class="video">
+<div class="premium">
+<div class="big gold">⭐ PREMIUM</div>
+<p>Special video — premium members only.</p>
+<button onclick="alert('Premium payments coming next!')">
+Unlock Premium
+</button>
+</div>
+</section>
+
+</div>
+</body>
+</html>
